@@ -320,8 +320,8 @@ public class JmxCollector extends Collector implements Collector.Describable {
             name.append(SEP);
             name.append(k);
         }
-        name.append(SEP);
-        name.append(attrName);
+//        name.append(SEP);
+//        name.append(attrName);
         String fullname = safeName(name.toString());
 
         if (config.lowercaseOutputName) {
@@ -344,6 +344,8 @@ public class JmxCollector extends Collector implements Collector.Describable {
               labelValues.add(entry.getValue());
             }
         }
+        labelNames.add("attrName");
+        labelValues.add(attrName);
 
         addSample(new MetricFamilySamples.Sample(fullname, labelNames, labelValues, ((Number)value).doubleValue()),
           type, help);

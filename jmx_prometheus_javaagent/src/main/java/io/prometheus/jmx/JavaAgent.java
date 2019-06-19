@@ -27,7 +27,7 @@ public class JavaAgent {
 
             new BuildInfoCollector().register();
             new JmxCollector(new File(config.file)).register();
-            DefaultExports.initialize();
+//            DefaultExports.initialize();
             server = new HTTPServer(config.socket, CollectorRegistry.defaultRegistry, true);
         }
         catch (IllegalArgumentException e) {
