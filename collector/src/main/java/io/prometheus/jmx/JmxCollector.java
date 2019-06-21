@@ -312,10 +312,10 @@ public class JmxCollector extends Collector implements Collector.Describable {
           Type type) {
         StringBuilder name = new StringBuilder();
         name.append(domain);
-        if (beanProperties.size() > 0) {
-            name.append(SEP);
-            name.append(beanProperties.values().iterator().next());
-        }
+//        if (beanProperties.size() > 0) {
+//            name.append(SEP);
+//            name.append(beanProperties.values().iterator().next());
+//        }
         for (String k : attrKeys) {
             name.append(SEP);
             name.append(k);
@@ -330,10 +330,10 @@ public class JmxCollector extends Collector implements Collector.Describable {
 
         List<String> labelNames = new ArrayList<String>();
         List<String> labelValues = new ArrayList<String>();
-        if (beanProperties.size() > 1) {
+        if (beanProperties.size() > 0) {
             Iterator<Map.Entry<String, String>> iter = beanProperties.entrySet().iterator();
             // Skip the first one, it's been used in the name.
-            iter.next();
+//            iter.next();
             while (iter.hasNext()) {
               Map.Entry<String, String> entry = iter.next();
               String labelName = safeName(entry.getKey());
