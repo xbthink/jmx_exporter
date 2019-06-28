@@ -23,13 +23,9 @@
   </modules>
 
   <distributionManagement>
-      <snapshotRepository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      </snapshotRepository>
       <repository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+          <id>fancy_nexus_snapshots</id>
+          <url>http://10.215.28.7:8081/repository/maven-snapshots/</url>
       </repository>
   </distributionManagement>
 
