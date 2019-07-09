@@ -8,7 +8,7 @@
   </parent>
 
   <groupId>io.prometheus.jmx</groupId>
-  <artifactId>collector</artifactId>
+  <artifactId>fancy-collector</artifactId>
   <description>
     See https://github.com/prometheus/jmx_exporter/blob/master/README.md
   </description>
