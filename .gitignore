@@ -1,9 +1,4 @@
 
 .idea/
-collector/collector.iml
-collector/target/
-jmx_prometheus_httpserver/jmx_prometheus_httpserver.iml
-jmx_prometheus_httpserver/target/
-jmx_prometheus_javaagent/dependency-reduced-pom.xml
-jmx_prometheus_javaagent/jmx_prometheus_javaagent.iml
-jmx_prometheus_javaagent/target/
+*.iml
+*/target
