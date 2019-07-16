@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>io.prometheus.jmx</groupId>
-      <artifactId>collector</artifactId>
+      <artifactId>fancy-collector</artifactId>
       <version>0.11.1-SNAPSHOT</version>
     </dependency>
     <dependency>
