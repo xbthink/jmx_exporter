@@ -32,6 +32,7 @@ public class JavaAgent {
         }
         catch (IllegalArgumentException e) {
             System.err.println("Usage: -javaagent:/path/to/JavaAgent.jar=[host:]<port>:<yaml configuration file>");
+            e.printStackTrace();
             System.exit(1);
         }
     }
