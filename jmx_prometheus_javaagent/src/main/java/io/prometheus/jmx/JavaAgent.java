@@ -25,7 +25,7 @@ public class JavaAgent {
         try {
             Config config = parseConfig(agentArgument, host);
 
-            new BuildInfoCollector().register();
+//            new BuildInfoCollector().register();
             new JmxCollector(new File(config.file)).register();
 //            DefaultExports.initialize();
             server = new HTTPServer(config.socket, CollectorRegistry.defaultRegistry, true);
