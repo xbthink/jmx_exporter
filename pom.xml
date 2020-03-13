@@ -25,7 +25,7 @@
   <distributionManagement>
       <repository>
           <id>fancy_nexus_snapshots</id>
-          <url>http://10.215.28.7:8081/fancy-nexus/repository/maven-snapshots/</url>
+          <url>http://192.168.28.49:8081/fancy-nexus/repository/maven-snapshots/</url>
       </repository>
   </distributionManagement>
 
